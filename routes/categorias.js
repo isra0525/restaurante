@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 const categoriasController = require('../controllers/categorias');
-router.get('/', (req, res) => {
+router.get('/categorias', (req, res) => {
     categoriasController.list().then((success) => {
         res.json({
             message: null,

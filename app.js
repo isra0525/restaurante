@@ -3,7 +3,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1/restauranteisrael',{ useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb://127.0.0.1/restaurante',{ useNewUrlParser: true, useUnifiedTopology: true})
 .then(()=> console.log("Mongo DB Connected"))
 .catch(err=> {
     console.log(Error, err.message);
